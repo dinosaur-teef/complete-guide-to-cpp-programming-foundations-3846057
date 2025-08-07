@@ -4,9 +4,18 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 int main(){
-    
+    std::vector<std::string> checkpoints = {"Star","Forest","Castle"};
+
+    checkpoints.push_back("Cave");
+    checkpoints.push_back("Finish");
+
+    std::cout << "This game has " << checkpoints.size() << " checkpoints." << std::endl;
+    std::cout << "The third location is: " << checkpoints[2] << std::endl;
+    checkpoints[2] = "Dark Castle";
+    std::cout << "The updated third location is: " << checkpoints[2] << std::endl;
     std::cout << std::endl << std::endl;
     return 0;
 }
