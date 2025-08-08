@@ -11,7 +11,7 @@ int main(){
 
     average = 0.0f;
     for (auto x : lapTimes)
-        average += lapTimes[i];
+        average += x;
     average /= lapTimes.size();
     std::cout << "Average Lap Time: " << average << std::endl;
 
